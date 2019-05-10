@@ -1,0 +1,94 @@
+h1, h2, h3, h4, h5, h6, p {
+    line-height: 0.3em;
+    font-family: "Montserrat", "Adobe Blank"; 
+    font-weight: 10; 
+    font-style: normal;
+    text-align: center;
+}
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 1.3em;
+    color: rgba(255,255,255,0.5);
+    font-style: italic;
+    line-height: 1em;
+}
+
+body {
+    background: black;
+}
+
+.title-divide{
+    background: linear-gradient(to right, rgba(255,255,255,0), rgba(170, 225, 255, 0.3), rgba(255,255,255,0));
+    height: 1px;
+}
+
+.button-container {
+    position: relative;
+    width: 50%;
+    margin: auto;
+    height: 7em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button{
+    display: flex;
+    width: 10em;
+    height: 7em;
+    margin: 0.5em;
+    justify-content: center;
+    align-items: center;
+}
+.button-face{
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(ellipse at top, rgba(225,255,255,0.3), rgba(225, 255, 255, 0));
+    filter: blur(4px) brightness(0.6);
+    transition: all 0.5s ease;
+}
+.button-text{
+    position: absolute;
+    user-select: none;
+    pointer-events: none;
+    line-height: 0.3em;
+    font-family: "Montserrat", "Adobe Blank"; 
+    font-weight: 10; 
+    font-style: normal;
+}
+.button-face:hover + .button-text{
+    font-weight: 1000;
+}
+.button-face:hover {
+    filter: blur(8px) brightness(1);
+}
+
+#myvideo {
+    position: absolute;
+    right: -8em;
+    filter: blur(0px);
+}
+
+.video-container{
+    position: fixed;
+    width: 100%;
+    overflow: hidden;
+    height: 50%;
+}
+
+.grotto-container {
+    position: fixed;
+    top: 50%;
+    background: rgba(0,0,0,0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+}
+
+.button-link, a:link, a:visited {
+    text-decoration: none;
+    color: white;
+}
